@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Workshop</string>
+    <string name="enter_text">Nome</string>
+    <string name="button_label">OK</string>
 </resources>
