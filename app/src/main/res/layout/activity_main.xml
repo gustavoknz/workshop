@@ -25,4 +25,23 @@
         android:layout_toRightOf="@+id/editText"
         android:onClick="btnClicked"
         android:text="@string/button_label" />
+
+    <Button
+        android:id="@+id/buttonStartService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="startServiceTapped"
+        android:text="@string/start_service" />
+
+    <Button
+        android:id="@+id/buttonStopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStartService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:onClick="stopServiceTapped"
+        android:text="@string/stop_service" />
 </RelativeLayout>
