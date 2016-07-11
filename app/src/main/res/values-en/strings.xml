@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Workshop</string>
+    <string name="button_label">OK</string>
+    <string name="message">Welcome, %s!</string>
+    <string name="enter_text">Name</string>
+</resources>

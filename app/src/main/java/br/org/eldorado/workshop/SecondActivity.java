@@ -14,8 +14,9 @@ public class SecondActivity extends Activity {
 
         Intent in = getIntent();
         String name = in.getStringExtra("name");
+        String message = getResources().getString(R.string.message, name);
 
         TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setText(name);
+        textView.setText(message);
     }
 }
