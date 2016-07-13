@@ -1,7 +1,9 @@
 package br.org.eldorado.workshop;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +17,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Get text from SharedPreferences
+        SharedPreferences sp = getSharedPreferences(Constants.SHARED_PREFERENCES_KEY, Context.MODE_PRIVATE);
+        String defaultName = "";
+        String name = sp.getString(Constants.SHARED_PREFERENCES_NAME_KEY, defaultName);
+
+        EditText eText = (EditText) findViewById(R.id.editText);
+        eText.setText(name);
     }
 
     public void btnClicked(View v) {

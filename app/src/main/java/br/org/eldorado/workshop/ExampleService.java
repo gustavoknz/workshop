@@ -17,7 +17,8 @@ public class ExampleService extends Service {
     private int count = 0;
     private Timer timer;
 
-    @Nullable @Override
+    @Nullable
+    @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
