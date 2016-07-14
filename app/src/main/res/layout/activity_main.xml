@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listExamples"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.org.eldorado.workshop.MainActivity">
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:hint="@string/enter_text"
-        android:inputType="textCapWords"
-        android:singleLine="true" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_toEndOf="@+id/editText"
-        android:layout_toRightOf="@+id/editText"
-        android:onClick="btnClicked"
-        android:text="@string/button_label" />
-
-    <Button
-        android:id="@+id/buttonStartService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="startServiceTapped"
-        android:text="@string/start_service" />
-
-    <Button
-        android:id="@+id/buttonStopService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonStartService"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:onClick="stopServiceTapped"
-        android:text="@string/stop_service" />
-</RelativeLayout>
+    android:padding="16dp" />

@@ -7,12 +7,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class SecondActivity extends Activity {
+public class ActivitiesSecondActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_activities_second);
 
         Intent in = getIntent();
         String name = in.getStringExtra("name");

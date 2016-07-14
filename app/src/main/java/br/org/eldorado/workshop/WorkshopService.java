@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class ExampleService extends Service {
+public class WorkshopService extends Service {
     private static final String TAG = "GalleryService";
     private static final int MAX_EXECUTIONS = 20;
     private int count = 0;
