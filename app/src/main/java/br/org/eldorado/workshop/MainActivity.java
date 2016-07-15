@@ -12,14 +12,15 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
-    private static final String[] EXAMPLES = new String[]{"Activities", "Shared Preferences", "Service"};
+    private static final String[] EXAMPLES = new String[]{"Activities", "Shared Preferences",
+            "Service", "GridView"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.list_example, EXAMPLES);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.list_item, EXAMPLES);
 
         ListView listView = (ListView) findViewById(R.id.listExamples);
         listView.setAdapter(adapter);
@@ -40,6 +41,9 @@ public class MainActivity extends Activity {
                         break;
                     case 2:
                         startActivity(new Intent(holder, ServiceActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(holder, GridActivity.class));
                         break;
                     default:
                         Toast.makeText(getApplicationContext(), R.string.example_default_text, Toast.LENGTH_SHORT).show();

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "br.org.eldorado.workshop"
-        minSdkVersion 14
+        minSdkVersion 7
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

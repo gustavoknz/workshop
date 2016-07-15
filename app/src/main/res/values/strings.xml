@@ -6,4 +6,6 @@
     <string name="start_service">Inicia Serviço</string>
     <string name="stop_service">Finaliza Serviço</string>
     <string name="example_default_text">Exemplo não disponível</string>
+    <string name="grid_image_desc">Image example</string>
+    <string name="grid_item_text">Item %d</string>
 </resources>
