@@ -13,6 +13,5 @@ public class GridActivity extends Activity {
 
         GridView gridView = (GridView) findViewById(R.id.gridExample);
         gridView.setAdapter(new ImageAdapter(this));
-        gridView.setTextFilterEnabled(true);
     }
 }

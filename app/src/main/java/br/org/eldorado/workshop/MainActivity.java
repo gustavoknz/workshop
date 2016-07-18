@@ -24,7 +24,6 @@ public class MainActivity extends Activity {
 
         ListView listView = (ListView) findViewById(R.id.listExamples);
         listView.setAdapter(adapter);
-        listView.setTextFilterEnabled(true);
 
         final MainActivity holder = this;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
