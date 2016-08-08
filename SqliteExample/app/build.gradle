@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 24
     buildToolsVersion "24.0.0"
 
     defaultConfig {
         applicationId "com.itcuties.android.apps.itcsqliteexample"
         minSdkVersion 8
-        targetSdkVersion 16
+        targetSdkVersion 24
     }
 
     buildTypes {
@@ -19,5 +19,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:support-v4:24.1.1'
 }
