@@ -1,7 +1,5 @@
 package com.itcuties.android.apps.itcsqliteexample;
 
-import com.itcuties.android.apps.itcsqliteexample.dao.TodoDAO;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +8,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.itcuties.android.apps.itcsqliteexample.dao.TodoDAO;
 
 public class AddTodoActivity extends Activity implements OnClickListener {
 
@@ -51,7 +51,7 @@ public class AddTodoActivity extends Activity implements OnClickListener {
 			dao.createTodo(todoTextValue);
 			
 			// Display success information
-			Toast.makeText(getApplicationContext(), "New TODO added!", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "New TODO added!", Toast.LENGTH_SHORT).show();
 			
 		} else if (backButton.isPressed()) {
 			// When back button is pressed

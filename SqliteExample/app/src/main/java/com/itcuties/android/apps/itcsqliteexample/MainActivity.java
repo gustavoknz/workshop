@@ -47,7 +47,7 @@ public class MainActivity extends ListActivity {
 		setListAdapter(new ListAdapter(this, dao.getTodos()));
 		
 		// Display success information
-		Toast.makeText(getApplicationContext(), "Deleted!", Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), "Deleted!", Toast.LENGTH_SHORT).show();
 		
 	}
 	
