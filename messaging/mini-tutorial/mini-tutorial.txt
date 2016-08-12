@@ -1,0 +1,13 @@
+1) Criar um novo projeto, em: https://console.firebase.google.com/
+
+2) Adicionar o Firebase ao seu aplicativo Android, veja img1.png e
+   fazer o download do google-services.json para seu aplicativo, seguindo instruções da tela;
+
+3) Enviar mensagem via interface do firebase, veja img2.png. 
+
+
+4) Para enviar via API é necessário a "Authorization: key" (veja img3.png) e o token do usuário (veja  img4.png).
+   Exemplo de envio de mensagem via linha de comando: 
+   curl --header "Authorization: key=CHAVE_DO_SEVIDOR" --header Content-Type:"application/json" https://gcm-http.googleapis.com/gcm/send -d "{ \"notification\": {\"title\": \"Portugal vs. Denmark\", \"text\": \"5 to 1\" },\"to\" : \"TOKEN_DO_USUARIO\"}"
+
+5) exemplo em PHP: push_v2.php
