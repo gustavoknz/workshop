@@ -8,6 +8,6 @@
 
 4) Para enviar via API é necessário a "Authorization: key" (veja img3.png) e o token do usuário (veja  img4.png).
    Exemplo de envio de mensagem via linha de comando: 
-   curl --header "Authorization: key=CHAVE_DO_SEVIDOR" --header Content-Type:"application/json" https://gcm-http.googleapis.com/gcm/send -d "{ \"notification\": {\"title\": \"Portugal vs. Denmark\", \"text\": \"5 to 1\" },\"to\" : \"TOKEN_DO_USUARIO\"}"
+   curl --header "Authorization: key=CHAVE_DO_SERVIDOR" --header Content-Type:"application/json" https://gcm-http.googleapis.com/gcm/send -d "{ \"notification\": {\"title\": \"Portugal vs. Denmark\", \"text\": \"5 to 1\" },\"to\" : \"TOKEN_DO_USUARIO\"}"
 
 5) exemplo em PHP: push_v2.php
